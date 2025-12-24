@@ -22,3 +22,23 @@ The system uses **JWT-based stateless authentication** and **AES encryption** to
 
 ### Testing
 - Jest for unit testing
+
+<br>
+
+## 🏗️ Architecture & Features
+
+The application follows a **client–server architecture** with a clear separation between frontend and backend responsibilities.
+
+### Backend – User Profile Service
+- User registration and login APIs using JWT-based authentication
+- Secure password hashing with bcrypt
+- AES encryption for sensitive fields (Aadhaar) stored in the database
+- Authentication middleware to protect profile access
+- Centralized error handling for authentication and data access
+
+### Frontend – Profile Management Dashboard
+- Login and registration interfaces
+- Protected profile page accessible only to authenticated users
+- Secure display of user details with masked Aadhaar number
+- Client-side error handling and session management
+
