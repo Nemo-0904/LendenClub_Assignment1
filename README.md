@@ -124,3 +124,39 @@ Registers a new user.
   "aadhaar": "123456789012"
 }
 
+Response: {
+  "message": "User registered successfully"
+}
+
+Login User
+
+POST /api/auth/login
+
+Authenticates a user and returns a JWT token.
+
+Request Body:
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+Response:
+{
+  "message": "Login successful",
+  "token": "<JWT_TOKEN>"
+}
+
+
+Get User Profile (Protected)
+
+GET /api/auth/profile
+
+Fetches the authenticated user's profile details.
+
+Headers:   Authorization: Bearer <JWT_TOKEN>
+Response:{
+  "id": 1,
+  "name": "User Name",
+  "email": "user@example.com",
+  "aadhaar": "XXXX-XXXX-9012"
+}
+
