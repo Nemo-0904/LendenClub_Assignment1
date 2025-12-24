@@ -42,3 +42,27 @@ The application follows a **client–server architecture** with a clear separati
 - Secure display of user details with masked Aadhaar number
 - Client-side error handling and session management
 
+
+<br>
+
+## 🔐 Security & Encryption Design
+
+Security was a primary design consideration throughout the application.
+
+### Authentication
+- Stateless authentication is implemented using JSON Web Tokens (JWT).
+- Tokens are issued during login and validated via middleware for protected routes.
+- Unauthorized access to profile data is prevented at the API level.
+
+### Password Security
+- User passwords are never stored in plain text.
+- Passwords are securely hashed using bcrypt with salting before storage.
+
+### Aadhaar / ID Number Handling
+- Aadhaar numbers are encrypted at rest using AES encryption.
+- Encryption and decryption logic is handled exclusively on the backend.
+- The decrypted Aadhaar is masked before being sent in API responses.
+- The frontend only displays masked Aadhaar values and never exposes the full identifier.
+
+This approach minimizes sensitive data exposure and aligns with secure data handling practices.
+
