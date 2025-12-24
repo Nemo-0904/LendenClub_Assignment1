@@ -1,23 +1,24 @@
-🔐 Secure User Profile Management System
+## 📌 Project Overview
 
-A full-stack web application that demonstrates secure user authentication, encrypted storage of sensitive data, and protected profile access using modern web technologies.
+This project implements a **Secure User Profile & Access Control System** as part of the GET 2026 Full Stack Assignment. The objective is to design a secure identity management service that supports user authentication, encrypted storage of sensitive identifiers, and protected access to user profile data.
 
-This project focuses on security-first backend design and privacy-aware frontend handling, suitable for academic evaluation and placement interviews.
+The system uses **JWT-based stateless authentication** and **AES encryption** to ensure that sensitive information such as Aadhaar is securely stored and accessed. A React-based frontend interacts with the backend APIs to provide login, registration, and profile management functionality with proper error handling and access control.
+<br>
+## 🛠️ Technology Stack
 
-📌 Features
+### Backend
+- Node.js
+- Express.js
+- MySQL
+- JSON Web Tokens (JWT) for authentication
+- bcrypt for password hashing
+- Node.js `crypto` module for AES encryption
+- dotenv for environment variable management
 
-User registration and login with JWT authentication
+### Frontend
+- React (Vite)
+- React Router
+- CSS for styling
 
-Password hashing using bcrypt
-
-Encryption of sensitive identifiers (Aadhaar) at rest
-
-Masked display of sensitive data at API and UI level
-
-Protected routes using authentication middleware
-
-Session handling with token-based authorization
-
-Clean separation of frontend and backend
-
-Secure environment variable management
+### Testing
+- Jest for unit testing
