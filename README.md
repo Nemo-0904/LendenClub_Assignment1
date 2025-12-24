@@ -65,4 +65,21 @@ Security was a primary design consideration throughout the application.
 - The frontend only displays masked Aadhaar values and never exposes the full identifier.
 
 This approach minimizes sensitive data exposure and aligns with secure data handling practices.
+<br>
+## 🗄️ Database Schema
+
+The application uses a relational database (MySQL) to store user profile information.
+
+### `users` Table
+
+| Column Name          | Type        | Description |
+|----------------------|-------------|-------------|
+| id                   | INT (PK)    | Unique user identifier |
+| name                 | VARCHAR     | User’s full name |
+| email                | VARCHAR     | User’s email address (unique) |
+| password_hash        | VARCHAR     | Hashed user password |
+| aadhaar_encrypted    | TEXT        | AES-encrypted Aadhaar number |
+
+Sensitive fields such as Aadhaar are stored only in encrypted form to ensure data security at rest.
+
 
