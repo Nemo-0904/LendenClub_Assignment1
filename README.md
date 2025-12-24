@@ -217,6 +217,5 @@ Veermata Jijabai Technological Institute (VJTI), Mumbai
 
 ## 🎥 Demo Video
 
-Find the demo video here:  
-👉 [Click to watch demo](./lenderclub.mp4)
+Find the demo video here: https://drive.google.com/file/d/1vrhYZapiYLltXohOQ6Zc-LrtGiS2r9gz/view?usp=sharing
 
