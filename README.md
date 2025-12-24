@@ -82,7 +82,7 @@ The application uses a relational database (MySQL) to store user profile informa
 
 Sensitive fields such as Aadhaar are stored only in encrypted form to ensure data security at rest.
 
-Setup / Run Instructions: 
+## Setup / Run Instructions: 
 ### Frontend
 cd frontend
 npm install
