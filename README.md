@@ -160,3 +160,57 @@ Response:{
   "aadhaar": "XXXX-XXXX-9012"
 }
 
+## 🤖 AI Tool Usage Log (Mandatory)
+
+As required by the GET 2026 Full Stack Assignment, AI-based development tools were used during the implementation of this project to improve development efficiency and code quality.
+
+### AI Tools Used
+- ChatGPT
+
+### AI-Assisted Tasks
+- Generated initial backend boilerplate using Node.js and Express
+- Assisted in designing JWT-based authentication flow
+- Generated AES encryption and decryption utility for sensitive data
+- Helped write Jest unit tests for encryption/decryption logic
+- Assisted in implementing authentication middleware for token validation
+- Refactored backend error handling for login and profile APIs
+- Assisted in frontend routing and protected route logic
+- Reviewed GitHub security practices including `.env`, `.gitignore`, and environment handling
+- Helped improve frontend form handling and error messaging
+
+### Effectiveness Score
+**Score: 4 / 5**
+
+**Justification:**  
+The use of AI tools significantly reduced development time by generating boilerplate code, security utilities, and test cases, saving approximately 2–3 hours. Manual reasoning and debugging were still required for security decisions, Aadhaar masking logic, and backend–frontend integration.
+
+## ✅ Submission Readiness & Final Notes
+
+This project fulfills all the requirements specified for **Assignment 1: Secure User Profile & Access Control System** under the GET 2026 Full Stack Assignment.
+
+### Completion Checklist
+- ✔ Secure Login and Registration using JWT
+- ✔ Encrypted storage of sensitive identifiers (Aadhaar) at rest
+- ✔ Authenticated API for fetching user profile data
+- ✔ Secure frontend dashboard for profile viewing
+- ✔ Robust error handling on both client and server sides
+- ✔ Unit tests for encryption and decryption logic
+- ✔ AI Tool Usage Log included as mandated
+- ✔ Clean project structure and documentation
+- ✔ Public GitHub repository ready for evaluation
+
+### Notes
+- Sensitive credentials are managed using environment variables and excluded from version control.
+- Aadhaar data is never exposed in plain text at any stage.
+- The project demonstrates a security-first approach aligned with real-world engineering practices.
+
+---
+
+## 👤 Author
+
+**Nithya Cherala**  
+Final Year Engineering Student  
+Electronics Engineering  
+Veermata Jijabai Technological Institute (VJTI), Mumbai
+
+---
