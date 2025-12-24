@@ -1,0 +1,255 @@
+/* Page background */
+.auth-wrapper {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    padding: 20px;
+}
+
+/* Card box */
+.register-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.register-card h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    color: #1f2933;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    margin: 8px 0 28px;
+}
+
+/* Inputs */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #d1d5db;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #d73b96;
+    box-shadow: 0 0 0 4px rgba(215, 59, 150, 0.15);
+}
+
+/* Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #d73b96;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.register-btn:hover {
+    background: #4338ca;
+}
+
+.register-btn:active {
+    transform: scale(0.98);
+}
+
+.register-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.feedback.success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.feedback.error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+
+/* Smaller Login Button */
+.login-secondary-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-secondary-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.popup-card h3 {
+    margin-bottom: 10px;
+}
+
+.popup-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.popup-btn {
+    width: 100%;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popup-close {
+    width: 100%;
+    padding: 8px;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.field-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.field-container input {
+    width: 100%;
+    padding-right: 40px;
+    /* Space for the icon */
+}
+
+.eye-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #9ca3af;
+    /* Neutral gray color */
+    transition: color 0.2s;
+}
+
+.eye-toggle:hover {
+    color: #4b5563;
+    /* Darker gray on hover */
+}
+
+/* Remove default button focus outline for a cleaner look */
+.eye-toggle:focus {
+    outline: none;
+}
+
+
+.field-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.field-container input {
+    width: 100%;
+    padding-right: 40px;
+    /* Space for the eye icon */
+}
+
+.eye-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.eye-toggle:hover {
+    color: #4b5563;
+}

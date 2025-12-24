@@ -1,0 +1,28 @@
+/* Clean Reset for the whole app */
+:root {
+/*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  background-color: #f9fafb;
+  /* Light grey background for the whole site */
+  color: #111827;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start;
+  /* Changed from center to top */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  /* Ensure the app takes full width */
+  margin: 0;
+  padding: 0;
+}
+
+/* Common transition for all buttons */
+button {
+  transition: all 0.2s ease-in-out;
+}

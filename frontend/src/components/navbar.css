@@ -1,0 +1,129 @@
+/* --- Global Reset & Base --- */
+* {
+  box-sizing: border-box;
+}
+
+/* --- Responsive Navbar --- */
+.navbar {
+  height: 60px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.nav-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* --- Buttons & Links --- */
+.nav-link {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  background: #d73b96;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  /* Prevents text wrapping on tiny screens */
+}
+
+/* --- Responsive Media Queries --- */
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 12px;
+    /* Less padding on sides */
+  }
+
+  .brand {
+    font-size: 16px;
+    /* Smaller logo text */
+  }
+
+  .nav-right {
+    gap: 8px;
+    /* Tighter buttons */
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  /* Make form cards fill the screen width */
+  .register-card,
+  .login-container,
+  .profile-container {
+    width: 95%;
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  /* Stack popup buttons vertically */
+  .popup-actions {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .auth-wrapper,
+  .login-wrapper,
+  .profile-wrapper {
+    padding: 20px 10px;
+  }
+}
+
+/* --- Popup Overlay (Always Centered) --- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+  /* Space around popup on mobile */
+}
+
+.popup-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 350px;
+  /* Fits perfectly on all phones */
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
