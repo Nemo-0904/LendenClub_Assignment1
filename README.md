@@ -107,3 +107,20 @@ Environment Variables:
 All sensitive configuration values are managed using environment variables.
 A sample file .env.example is provided.
 The actual .env file must not be committed to version control.
+
+## 📄 API Documentation
+
+The backend exposes RESTful APIs for authentication and secure profile access.
+
+### Register User
+**POST** `/api/auth/register`
+Registers a new user.
+
+**Request Body:**: 
+{
+  "name": "User Name",
+  "email": "user@example.com",
+  "password": "password123",
+  "aadhaar": "123456789012"
+}
+
