@@ -214,3 +214,9 @@ Electronics Engineering
 Veermata Jijabai Technological Institute (VJTI), Mumbai
 
 ---
+
+## 🎥 Demo Video
+
+Find the demo video here:  
+👉 [Click to watch demo](./lenderclub.mp4)
+
