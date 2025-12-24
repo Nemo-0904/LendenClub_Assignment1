@@ -82,4 +82,28 @@ The application uses a relational database (MySQL) to store user profile informa
 
 Sensitive fields such as Aadhaar are stored only in encrypted form to ensure data security at rest.
 
+Setup / Run Instructions: 
+### Frontend
+cd frontend
+npm install
+npm run dev
 
+The frontend will start on: http://localhost:5173
+
+Backend:  
+cd backend
+npm install
+npm start
+
+The backend server will start on: http://localhost:5000
+
+Database: Create a MySQL database.
+Configure database credentials in a .env file inside the backend folder
+(Refer to .env.example for required variables).
+Ensure MySQL service is running before starting the backend.
+
+Environment Variables: 
+
+All sensitive configuration values are managed using environment variables.
+A sample file .env.example is provided.
+The actual .env file must not be committed to version control.
